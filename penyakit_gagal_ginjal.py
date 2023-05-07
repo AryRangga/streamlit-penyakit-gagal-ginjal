@@ -27,7 +27,7 @@ if st.button('Prediksi Penyakit Gagal Ginjal'):
     predict = model.predict([[blood_pressure,sg,albumin,sugar,red_blood_cell,blood_urea,serum_creatinine,sodium,pottasium,hemoglobin,white_blood_cell,red_blood_cell_count,hypertension]])
     
     if(predict[0]==0):
-        predict = 'Pasien Tidak Mengidap Liver'
+        predict = 'Seorang Tidak Mengidap Gagal Ginjal'
     else :
-        predict = 'Pasien Mengidap Liver'
+        predict = 'Seorang Mengidap Gagal Ginjal'
 st.success(predict)
